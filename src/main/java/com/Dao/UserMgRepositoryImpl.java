@@ -24,13 +24,13 @@ public class UserMgRepositoryImpl {
     }
 
     public User findUserByName(String userName) {
-        Query query = new Query(Criteria.where("userName").is(userName));
+        Query query = new Query(Criteria.where("name").is(userName));
         User user = mongoTemplate.findOne(query, User.class);
         return user;
     }
 
     public long update(User user) {
-        Query query = new Query(Criteria.where("userName").is(user.getName()));
+        Query query = new Query(Criteria.where("name").is(user.getName()));
         Update update = new Update().set("passWord", user.getPassWord());
         UpdateResult updateResult = mongoTemplate.updateFirst(query, update, User.class);
         if (update == null)
@@ -40,7 +40,7 @@ public class UserMgRepositoryImpl {
     }
 
     public void delete(User user) {
-        Query query = new Query(Criteria.where("userName").is(user.getName()));
+        Query query = new Query(Criteria.where("name").is(user.getName()));
         mongoTemplate.remove(query, User.class);
     }
 }
