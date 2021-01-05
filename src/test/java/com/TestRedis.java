@@ -1,3 +1,5 @@
+package com;
+
 import com.Model.User;
 import lombok.SneakyThrows;
 import org.junit.Assert;

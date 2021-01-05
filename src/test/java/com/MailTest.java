@@ -1,3 +1,5 @@
+package com;
+
 import com.Mail.MailServiceImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;

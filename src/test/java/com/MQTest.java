@@ -1,3 +1,5 @@
+package com;
+
 import com.MQ.DirectExchange.HelloSender;
 import com.MQ.DirectExchange.HelloSender2;
 import com.MQ.FanoutExchange.SenderA;
