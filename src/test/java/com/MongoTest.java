@@ -20,10 +20,32 @@ public class MongoTest {
     private UserMgRepositoryImpl userMgRepository;
 
     @Test
-    public void test() throws Exception{
+    public void test() throws Exception {
+        User user = new User();
+        user.setName("zhangsan");
+        user.setPassWord("admin");
+        userMgRepository.save(user);
+    }
+
+    @Test
+    public void test1() {
+        User user = userMgRepository.findUserByName("小明");
+        System.out.println(user);
+    }
+
+    @Test
+    public void test2() {
         User user = new User();
         user.setName("小明");
-        user.setPassWord("fffooo123");
-        userMgRepository.save(user);
+        user.setPassWord("admin");
+        System.out.println(userMgRepository.update(user));
+    }
+
+    @Test
+    public void test3() {
+        User user = new User();
+        user.setName("小明");
+        user.setPassWord("admin");
+        userMgRepository.delete(user);
     }
 }
