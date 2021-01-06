@@ -1,5 +1,6 @@
-HelloTests.class
-MailTest.class
-MQTest.class
-MapperTest.class
-TestRedis.class
+com\MQTest.class
+com\MongoTest.class
+com\TestRedis.class
+com\MapperTest.class
+com\HelloTests.class
+com\MailTest.class
