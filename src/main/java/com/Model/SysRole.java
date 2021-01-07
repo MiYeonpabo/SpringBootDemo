@@ -1,8 +1,5 @@
 package com.Model;
 
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
-
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -29,13 +26,11 @@ public class SysRole implements Serializable {
 
     private Boolean available = Boolean.FALSE;// 是否可用,如果不可用将不会添加给用户
 
-    @ManyToMany
-    @Fetch(FetchMode.SUBSELECT)
+    @ManyToMany(fetch = FetchType.EAGER)//立即从数据库中进行加载数据;
     @JoinTable(name = "SysRolePermission", joinColumns = {@JoinColumn(name = "roleId")}, inverseJoinColumns = {@JoinColumn(name = "permissionId")})
     private List<SysPermission> permissions;
 
     @ManyToMany
-    @Fetch(FetchMode.SUBSELECT)
     @JoinTable(name = "SysUserRole", joinColumns = {@JoinColumn(name = "roleId")}, inverseJoinColumns = {@JoinColumn(name = "uid")})
     private List<ShiroUser> userInfos;
 

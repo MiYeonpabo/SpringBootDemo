@@ -1,8 +1,5 @@
 package com.Model;
 
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -30,8 +27,7 @@ public class ShiroUser implements Serializable {
     private String password;//密码
     private String salt;//加密密码的盐
     private byte state;//用户状态,0:创建未认证（比如没有激活，没有输入验证码等等）--等待验证的用户 , 1:正常状态,2：用户被锁定.
-    @ManyToMany//立即从数据库中进行加载数据;
-    @Fetch(FetchMode.SUBSELECT)
+    @ManyToMany(fetch = FetchType.EAGER)//立即从数据库中进行加载数据;
     @JoinTable(name = "SysUserRole", joinColumns = {@JoinColumn(name = "uid")}, inverseJoinColumns = {@JoinColumn(name = "roleId")})
     private List<SysRole> roleList;
 
@@ -89,5 +85,27 @@ public class ShiroUser implements Serializable {
 
     public void setRoleList(List<SysRole> roleList) {
         this.roleList = roleList;
+    }
+
+    /**
+     * 密码盐.
+     *
+     * @return
+     */
+    public String getCredentialsSalt() {
+        return this.username + this.salt;
+    }
+
+    @Override
+    public String toString() {
+        return "ShiroUser{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", salt='" + salt + '\'' +
+                ", state=" + state +
+                ", roleList=" + roleList.size() +
+                '}';
     }
 }

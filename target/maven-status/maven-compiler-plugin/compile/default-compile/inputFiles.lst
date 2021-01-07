@@ -1,3 +1,4 @@
+D:\CODE_NEW\SpringBootDemo\src\main\java\com\Model\SysRole.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\Model\City.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\MQ\FanoutExchange\ReceiverC.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\MQ\TopicExchange\Receiver1.java
@@ -21,6 +22,7 @@ D:\CODE_NEW\SpringBootDemo\src\main\java\com\Dao\HotelSummary.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\Mapper\test2\UserMapper2.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\MQ\DirectExchange\HelloReceiver2.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\MQ\DirectExchange\HelloSender.java
+D:\CODE_NEW\SpringBootDemo\src\main\java\com\Model\SysPermission.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\Mapper\test1\UserMapper1.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\Cache\DataSource2Config.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\MQ\DirectExchange\HelloReceiver.java
@@ -40,4 +42,6 @@ D:\CODE_NEW\SpringBootDemo\src\main\java\com\MQ\TopicExchange\Receiver2.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\Cache\MultipleMongoConfig.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\MQ\DirectExchange\HelloSender2.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\Cache\DataSource1Config.java
+D:\CODE_NEW\SpringBootDemo\src\main\java\com\Model\ShiroUser.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\MQ\FanoutExchange\SenderA.java
+D:\CODE_NEW\SpringBootDemo\src\main\java\com\Filter\ShiroConfig.java
