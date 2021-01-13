@@ -1,3 +1,4 @@
+com\Controller\ShiroController.class
 com\MQ\DirectExchange\HelloReceiver2.class
 com\Mapper\test2\UserMapper2.class
 com\MQ\FanoutExchange\FanoutRabbitConfig.class
@@ -6,6 +7,7 @@ com\MQ\FanoutExchange\ReceiverC.class
 com\MQ\TopicExchange\Sender2.class
 com\Mapper\UserMapper.class
 com\MQ\TopicExchange\Sender1.class
+com\Service\impl\UserInfoServiceImpl.class
 com\Filter\MyFilter.class
 com\MQ\TopicExchange\Receiver2.class
 com\Sources\HelloProperties.class
@@ -13,6 +15,7 @@ com\Mapper\test1\UserMapper1.class
 com\Dao\HotelSummary.class
 com\Cache\RedisConfig$1.class
 com\MQ\FanoutExchange\ReceiverA.class
+com\Shiro\ShiroConfig.class
 com\Filter\WebConfiguration.class
 com\Mail\MailServiceImpl.class
 com\MQ\DirectExchange\HelloSender2.class
@@ -24,6 +27,8 @@ com\Cache\PrimaryMongoConfig.class
 com\Cache\SecondaryMongoConfig.class
 com\Dao\UserMgRepositoryImpl.class
 com\SpringBootDemoApplication.class
+com\Service\UserInfoService.class
+com\Shiro\MyShiroRealm.class
 com\MQ\TopicExchange\TopicRabbitConfig.class
 com\Cache\SessionConfig.class
 com\Model\User.class
@@ -38,5 +43,8 @@ com\Task\SchedulerTask.class
 com\Dao\UserRepository.class
 com\Cache\RedisConfig.class
 com\MQ\DirectExchange\HelloSender.class
+com\Dao\UserInfoDao.class
+com\Mapper\ShiroMapper.class
 com\MQ\TopicExchange\Receiver1.class
 com\MQ\FanoutExchange\ReceiverB.class
+com\Controller\ShiroUserController.class
