@@ -35,6 +35,7 @@ com\Model\User.class
 com\Controller\RedisController.class
 com\Task\Scheduler2Task.class
 com\Model\UserInfo.class
+com\UploadFile\UploadController.class
 com\MQ\FanoutExchange\SenderA.class
 com\Model\City.class
 com\Model\SysRole.class
@@ -48,3 +49,4 @@ com\Mapper\ShiroMapper.class
 com\MQ\TopicExchange\Receiver1.class
 com\MQ\FanoutExchange\ReceiverB.class
 com\Controller\ShiroUserController.class
+com\UploadFile\GlobalExceptionHandler.class

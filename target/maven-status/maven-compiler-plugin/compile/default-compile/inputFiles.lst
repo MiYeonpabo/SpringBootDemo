@@ -27,6 +27,8 @@ D:\CODE_NEW\SpringBootDemo\src\main\java\com\MQ\FanoutExchange\ReceiverC.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\MQ\TopicExchange\Receiver1.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\Task\SchedulerTask.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\MQ\FanoutExchange\FanoutRabbitConfig.java
+D:\CODE_NEW\SpringBootDemo\src\main\java\com\UploadFile\GlobalExceptionHandler.java
+D:\CODE_NEW\SpringBootDemo\src\main\java\com\UploadFile\UploadController.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\Cache\RedisConfig.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\Dao\UserRepository.java
 D:\CODE_NEW\SpringBootDemo\src\main\java\com\Cache\PrimaryMongoConfig.java
