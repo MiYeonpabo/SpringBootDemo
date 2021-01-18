@@ -16,7 +16,7 @@ import java.util.Map;
 public class ShiroController {
     @RequestMapping({"/", "/index"})
     public String index() {
-        return "/index";
+        return "index";
     }
 
     @RequestMapping("/login")
@@ -42,7 +42,7 @@ public class ShiroController {
             }
         }
         map.put("msg", msg);
-        return "/login";
+        return "login";
     }
 
     @RequestMapping("/403")
